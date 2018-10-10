@@ -1,49 +1,13 @@
-document.getElementById('image1').addEventListener('mouseover', function chang() {
-document.getElementById('image1').src = 'image1_2.jpg';
-}
-)
+var tab = [document.getElementById('image1'), document.getElementById('image2'), document.getElementById('image3'), document.getElementById('image4'), document.getElementById('image5')]
+//tableau avec les varianles des iamges
 
-document.getElementById('image2').addEventListener('mouseover', function chang() {
-document.getElementById('image2').src = 'image2_2.jpg';
-}
+for (var i=0; i<tab.length; i++) {
+  tab[i].addEventListener('mouseover', function() {
+    this.src = this.id + '_2.jpg';
+      }
+    )
+  tab[i].addEventListener('mouseout', function () {
+    this.src = this.id + '.jpg';
+  }
 )
-
-document.getElementById('image3').addEventListener('mouseover', function chang() {
-document.getElementById('image3').src = 'image3_2.jpg';
 }
-)
-
-document.getElementById('image4').addEventListener('mouseover', function chang() {
-document.getElementById('image4').src = 'image4_2.jpg';
-}
-)
-
-document.getElementById('image5').addEventListener('mouseover', function chang() {
-document.getElementById('image5').src = 'image5_2.jpg';
-}
-)
-
-document.getElementById('image1').addEventListener('mouseout', function chang() {
-document.getElementById('image1').src = 'image1.jpg';
-}
-)
-
-document.getElementById('image2').addEventListener('mouseout', function chang() {
-document.getElementById('image2').src = 'image2.jpg';
-}
-)
-
-document.getElementById('image3').addEventListener('mouseout', function chang() {
-document.getElementById('image3').src = 'image3.jpg';
-}
-)
-
-document.getElementById('image4').addEventListener('mouseout', function chang() {
-document.getElementById('image4').src = 'image4.jpg';
-}
-)
-
-document.getElementById('image5').addEventListener('mouseout', function chang() {
-document.getElementById('image5').src = 'image5.jpg';
-}
-)
